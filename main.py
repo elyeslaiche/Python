@@ -36,12 +36,18 @@ def isCharInString(string):
     else:
         return False
 
-
+def timesCharInString(string):
+    cpt =0
+    for i in string:
+        if i == 'e':
+            cpt += 1
+    return cpt
 # Press the green button in the gutter to run the script.
-print(degreToRadian(180,10,40))
-print(radToDegre(0.555))
-print(degtofahr(10))
-print(calcul_interet(100))
-print(isCharInString("elyes"))
-print(grainDeRiz())
+#print(degreToRadian(180,10,40))
+#print(radToDegre(0.555))
+#print(degtofahr(10))
+#print(calcul_interet(100))
+#print(isCharInString("elyes"))
+print(timesCharInString("elyes"))
+#print(grainDeRiz())
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
