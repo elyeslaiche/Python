@@ -54,6 +54,15 @@ def invString(string):
     for i in range(1, len(string)+1):
         newString += string[len(string) - i]
     return newString
+
+def palyndrome(string):
+    newString = ""
+    for i in range(1, len(string) + 1):
+        newString += string[len(string) - i]
+    if string == newString:
+        return True
+    else:
+        return False
 # Press the green button in the gutter to run the script.
 #print(degreToRadian(180,10,40))
 #print(radToDegre(0.555))
@@ -62,6 +71,7 @@ def invString(string):
 #print(isCharInString("elyes"))
 #print(timesCharInString("elyes"))
 #print(insertAsterisque("elyes"))
-print(invString("elyes"))
+#print(invString("elyes"))
+print(palyndrome("sos"))
 #print(grainDeRiz())
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
