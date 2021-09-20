@@ -18,8 +18,15 @@ def radToDegre(rad):
 def degtofahr(temperature):
     temperature = (temperature * 9/5)+32
     return temperature
+
+def calcul_interet(sommededepart):
+    for i in range(1,21):
+        sommededepart+= sommededepart*0.043
+    return sommededepart
+
 # Press the green button in the gutter to run the script.
 print(degreToRadian(180,10,40))
 print(radToDegre(0.555))
 print(degtofahr(10))
+print(calcul_interet(100))
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
