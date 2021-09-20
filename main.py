@@ -44,9 +44,15 @@ def timesCharInString(string):
     return cpt
 
 def insertAsterisque(string):
-    newString = None
+    newString = ""
     for i in string:
         newString += i + "*"
+    return newString
+
+def invString(string):
+    newString = ""
+    for i in range(1, len(string)+1):
+        newString += string[len(string) - i]
     return newString
 # Press the green button in the gutter to run the script.
 #print(degreToRadian(180,10,40))
@@ -55,6 +61,7 @@ def insertAsterisque(string):
 #print(calcul_interet(100))
 #print(isCharInString("elyes"))
 #print(timesCharInString("elyes"))
-print(insertAsterisque("elyes"))
+#print(insertAsterisque("elyes"))
+print(invString("elyes"))
 #print(grainDeRiz())
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
