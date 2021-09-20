@@ -23,15 +23,25 @@ def calcul_interet(sommededepart):
     for i in range(1,21):
         sommededepart+= sommededepart*0.043
     return sommededepart
+
 def grainDeRiz():
     nbrgrain = 1
     for i in range(1,64):
         nbrgrain *= 2
     return nbrgrain
+
+def isCharInString(string):
+    if "e" in string:
+        return True
+    else:
+        return False
+
+
 # Press the green button in the gutter to run the script.
 print(degreToRadian(180,10,40))
 print(radToDegre(0.555))
 print(degtofahr(10))
 print(calcul_interet(100))
+print(isCharInString("elyes"))
 print(grainDeRiz())
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
