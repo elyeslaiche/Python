@@ -9,8 +9,12 @@ def degreToRadian(degre, minutes, seconde):
     degreRad = degredecimal * np.pi / 180
     return degreRad
 
-
+def radToDegre(rad):
+    degre =(int)(rad * 180 // np.pi)
+    min =(int)((rad * 180 / np.pi)* 60) % 60
+    seconde =(int)((((rad * 180 / np.pi  )* 60) % 60)* 60)% 60
+    return degre,min,seconde
 # Press the green button in the gutter to run the script.
 print(degreToRadian(180,10,40))
-
+print(radToDegre(np.pi))
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
